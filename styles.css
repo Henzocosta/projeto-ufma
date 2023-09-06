@@ -5,11 +5,13 @@
     padding: 0;
     border-radius: 5px;
     box-sizing: content-box;
-    width: 500px;
+    width: 400px;
  
 
     
 }
+
+
 .body{
     margin: 90px;
     display: flex;
@@ -17,18 +19,25 @@
     justify-content: center;
     align-content: center;
 }
-o
+
 .cabecalho{
     background-color: #22C55E;
     display: flex;
     justify-content: center;
 }
+.div_img{
+    display: flex;
+    justify-content: center;
+    
+}
 .imagem{
     background-color: #FFFFFF;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
-    border: 5px solid #22C55E;
+    border-radius: 100%;
+    border: 3px solid #22C55E;
+     
+
 }
 .paragrafo_nome{
     text-align: center;
