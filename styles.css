@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root{
-    --cor-primaria:  #22C55E;
+    --cor-verde:  #22C55E;
+    --cor-azul: #4F709C;
+    --cor-vermelho: #C63D2F;
+    --cor-laranja: #FF9B50;
     --cor-fonte: #000000;
     --cor-backimg: #FFFFFF;
 
     --fonte: 'Inter', sans-serif;
 }
-
+.verde{
+    background-color: var(--cor-verde);
+}
+.azul{
+    background-color: var(--cor-azul);
+}
+.vermelho{
+    background-color: var(--cor-vermelho);
+}
+.laranja{
+    background-color: var(--cor-laranja);
+}
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +43,7 @@
 }
 .cabecalho{
     height: 60px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-verde);
     display: flex;
     justify-content: center;
 }
@@ -43,7 +57,7 @@
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    border: 3px solid var(--cor-primaria);
+    border: 3px solid var(--cor-verde);
 }
 .paragrafo_nome{
     text-align: center;
@@ -70,7 +84,7 @@
     gap: 20px;
 }
 .div_nav_botao{
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-verde);
     font-size: 12px;
     font-family: var(--fonte);
     font-weight: 400;
@@ -84,6 +98,16 @@
 .paragrafo_footer{
     padding-top: 1.5rem;
     text-align: center;
+    font-size: 12px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    color: var(--cor-fonte);
+}
+.button_org{
+    padding-bottom: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
     font-size: 12px;
     font-family: var(--fonte);
     font-weight: 400;
