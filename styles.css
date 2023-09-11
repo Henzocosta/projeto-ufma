@@ -1,27 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --cor-primaria:  #22C55E;
+    --cor-fonte: #000000;
+    --cor-backimg: #FFFFFF;
+
+    --fonte: 'Inter', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     border-radius: 5px;
     box-sizing: content-box;
-    width: 400px;
- 
-
-    
+    width: 400px;    
 }
 
 
 .body{
-    margin: 90px;
+    margin: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
 }
-
+.conteiner{
+    
+}
 .cabecalho{
-    background-color: #22C55E;
+    height: 60px;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
 }
@@ -31,29 +39,29 @@
     
 }
 .imagem{
-    background-color: #FFFFFF;
+    background-color: var(--cor-backimg);
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    border: 3px solid #22C55E;
-     
-
+    border: 3px solid var(--cor-primaria);
 }
 .paragrafo_nome{
     text-align: center;
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte);
     font-weight: 400;
-    color: #000000;
-    padding-top: 5px;
+    color: var(--cor-fonte);
+    padding-top: 50px;
+    
 }
 .paragrafo1{
+    display: block;
     padding: 30px 0;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte);
     font-size: 12px;
     font-weight: 400;
-    color: #000000;
+    color: var(--cor-fonte);
 }
 .div_nav{
     display: flex;
@@ -62,9 +70,9 @@
     gap: 20px;
 }
 .div_nav_botao{
-    background-color: #22C55E;
+    background-color: var(--cor-primaria);
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte);
     font-weight: 400;
     width: 35%;
     padding: 16px 0;
@@ -74,10 +82,28 @@
     
 }
 .paragrafo_footer{
-    padding-top: 30px;
+    padding-top: 1.5rem;
     text-align: center;
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte);
     font-weight: 400;
-    color: #000000;
+    color: var(--cor-fonte);
+}
+
+@media screen and (max-width: 1350px){
+       .body{
+        display: block;
+        width: auto;;
+       }
+       .conteiner{
+        width: 50%;
+        height: 50%;
+       }
+       .main_R{
+        width: auto;
+        height: auto;
+       }
+       .paragrafo_footer{
+        width: auto;
+       }
 }
